@@ -1,0 +1,1 @@
+sudo midori -e Fullscreen -a http://myhome-edf.fr:9000

@@ -1,0 +1,12 @@
+sudo apt-get install x11-xserver-utils
+cd /etc/xdg/lxsession/LXDE/autostart
+
+delete
+@xscreensaver -no-splash
+
+add
+@xset s off
+@xset -dpms
+@xset s noblank
+
+sudo reboot

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="q.tshaimanga@gmail.com">
+    <title> Picolo </title>
+    <link rel="stylesheet" type="text/css" href="./dist/app.css" />
+    <script type="text/javascript" src="./dist/build.js"></script> <!-- ./dist/build.js -->
+  </head>
+  <body>
+
+  <section id="nav">
+    <a href="#" class="nav">Mes objets</a>
+    <a href="#" class="nav">Ma conso</a>
+    <a href="#" class="nav">Mes infos</a>
+  </section>
+
+    <div id="container">
+      <h1>picolo <span class="seq" id="state"></span></h1>
+
+      <section>
+        <div class="controle">
+          <button typ="button" value="true" class="but" id="start">start</button>
+          <button typ="button" value="false" class="but" id="start">stop</button>
+        </div>
+
+        <div class="restart">
+          <button type="button" value="restartTrue" class="but" id="restart">restart</button>
+        </div>
+
+        <div class="timer">
+          <h5>minutes : <span class="seq" id="timerValue"></span></h5>
+          <input type="number" name="timer" min="0" id="time">
+          <button typ="button" value="timer" class="but" id="timer">change time</button>
+        </div>
+
+        <div class="rotation">
+          <h5>rotation gauche : &nbsp; <span class="seq" id="sequenceDataGauche"></span></h5>
+          <button typ="button" value="-" class="but" id="moreGauche">more</button>
+          <button typ="button" value="-" class="but" id="lessGauche">less</button>
+
+          <h5>rotation droite : &nbsp; <span class="seq" id="sequenceDataDroite"></span></h5>
+          <button typ="button" value="+" class="but" id="moreDroite">more</button>
+          <button typ="button" value="+" class="but" id="lessDroite">less</button>
+        </div>
+      </section>
+
+      <h6>© EDF - Laboratoire I&sup2R</h6>
+    </div>
+
+  </body>
+</html>

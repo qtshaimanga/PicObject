@@ -1,0 +1,8 @@
+npm i serialport
+
+> serialport@2.0.5 install /Users/my_user/my_project/node_modules/serialport
+> node-pre-gyp install --fallback-to-build
+
+
+use serialport v "serialport": "^2.0.6" - not the last.
+rm modules pdate gcc, node and npm

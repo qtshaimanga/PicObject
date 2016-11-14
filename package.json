@@ -1,0 +1,46 @@
+{
+  "name": "pic",
+  "version": "1.0.1",
+  "description": "Protoype with xbee for picolo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "back:watch": "./node_modules/nodemon/bin/nodemon.js ./back/index.js",
+    "watch": "watchify -d -t [ babelify ] front/ -o ./front/dist/build.js",
+    "start": "npm run back:watch & npm run watch"
+  },
+  "author": "q.tshaimanga@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-preset-es2015": "^6.1.2",
+    "babelify": "^7.2.0",
+    "watchify": "^3.7.0",
+    "watchjs": "0.0.0",
+    "xbee-api": "^0.4.0",
+    "express": "^4.13.4",
+    "node-pre-gyp": "0.6.x",
+    "serialport": "^2.0.6",
+    "nodemon": "^1.9.1",
+    "path": "^0.12.7",
+    "lowdb": "^0.10.2",
+    "lodash": "^3.10.1",
+    "body-parser": "^1.15.0",
+    "pm2": "^1.0.2",
+    "raf": "^3.2.0"
+  },
+  "config": {
+    "unsafe-perm": true
+  },
+  "dependencies": {
+    "bluetooth-serial-port": "^1.2.6"
+  },
+  "engines": {
+    "node": ">=0.12.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+sudo env PATH=$PATH:/usr/local/bin pm2 startup raspberry -u pi
+
+
+cd ~/.config/autostart/
+sudo geany picolo.desktop 
+
+
+[Desktop Entry]
+Type=Application
+Name=Journal
+Exec=lxterminal —-command bash /home/pi/Desktop/pic/picolo.sh
+Terminal=true
